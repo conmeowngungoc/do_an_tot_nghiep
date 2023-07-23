@@ -172,7 +172,7 @@ class CartController extends Controller
         $donhang['diachi'] = $request->address_detail . ', ' . $request->ward . ', ' . $request->district . ', ' . $request->city;
         $donhang['ghichu'] = $request->ghichu;
         //dd(Helper::totalCartPrice());
-        $donhang['tongtien'] =Helper::totalCartPrice();
+        $donhang['tongtien'] = \App\Http\Helpers\Helper::totalCartPrice();
       
         $donhang['ngaylap'] = Carbon::now('Asia/Ho_Chi_Minh');
         $donhang['httt'] = $request->payment;
