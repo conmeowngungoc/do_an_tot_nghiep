@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Banner;
 use App\Models\Product;
 use App\Models\Category;
@@ -17,12 +16,13 @@ use Session;
 use Newsletter;
 use DB;
 use Hash;
+use App\Http\Helpers;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-
-class FrontEndController extends Controller
+class FrontendController extends Controller
 {
-       public function index(Request $request){
+
+    public function index(Request $request){
         return redirect()->route($request->user()->role);
     }
 
