@@ -8,17 +8,17 @@
                 <span class="count" data-count="{{count(Auth::user()->unreadNotifications)}}">{{count(Auth::user()->unreadNotifications)}}</span>
             @endif
         </span>
-    </a>
-    <!-- Dropdown - Alerts -->
-    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+      </a>
+      <!-- Dropdown - Alerts -->
+      <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
         <h6 class="dropdown-header">
-            Notifications Center
+          Notifications Center
         </h6>
         @foreach(Auth::user()->unreadNotifications as $notification)
-            <a class="dropdown-item d-flex align-items-center" target="_blank" href="{{route('admin.notification',$notification->id)}}">
+    <a class="dropdown-item d-flex align-items-center" target="_blank" href="{{route('admin.notification',$notification->id)}}">
                 <div class="mr-3">
                     <div class="icon-circle bg-primary">
-                        <i class="fas {{$notification->data['fas']}} text-white"></i>
+                    <i class="fas {{$notification->data['fas']}} text-white"></i>
                     </div>
                 </div>
                 <div>
@@ -34,5 +34,5 @@
         @endforeach
 
         <a class="dropdown-item text-center small text-gray-500" href="{{route('all.notification')}}">Show All Notifications</a>
-    </div>
+      </div>
 </div>
