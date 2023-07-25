@@ -24,7 +24,6 @@ use App\Http\Controllers\ShippingController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\WishlistController;
 use Brick\Math\Exception\RoundingNecessaryException;
-use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -166,14 +165,12 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth','admin']],function(){
     Route::post('change-password', 'AdminController@changPasswordStore')->name('change.password');
 });
 
-
-
 // User section start
 Route::group(['prefix'=>'/user','middleware'=>['user']],function(){
     Route::get('/','HomeController@index')->name('user');
-     // Profile
-     Route::get('/profile','HomeController@profile')->name('user-profile');
-     Route::post('/profile/{id}','HomeController@profileUpdate')->name('user-profile-update');
+    // Profile
+    Route::get('/profile','HomeController@profile')->name('user-profile');
+    Route::post('/profile/{id}','HomeController@profileUpdate')->name('user-profile-update');
     //  Order
     Route::get('/order',"HomeController@orderIndex")->name('user.order.index');
     Route::get('/order/show/{id}',"HomeController@orderShow")->name('user.order.show');

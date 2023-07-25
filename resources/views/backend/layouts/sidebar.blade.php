@@ -2,10 +2,10 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin')}}">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">Admin</div>
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">Admin</div>
     </a>
 
     <!-- Divider -->
@@ -13,9 +13,9 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{route('admin')}}">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Bảng điều khiển</span></a>
+      <a class="nav-link" href="{{route('admin')}}">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Bảng điều khiển</span></a>
     </li>
 
     <!-- Divider -->
@@ -35,30 +35,30 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('banner.index')}}" >
-            <i class="fas fa-image"></i>
-            <span>Ảnh Bìa</span>
-        </a>
+      <a class="nav-link collapsed" href="{{route('banner.index')}}" >
+        <i class="fas fa-image"></i>
+        <span>Ảnh Bìa</span>
+      </a>
 
     </li>
     <!-- Divider -->
     <hr class="sidebar-divider">
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Shop
-    </div>
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Shop
+        </div>
     <!-- Categories -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('category.index')}}" >
-            <i class="fas fa-sitemap"></i>
-            <span>Danh mục</span>
+          <i class="fas fa-sitemap"></i>
+          <span>Danh mục</span>
         </a>
     </li>
     {{-- Products --}}
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('product.index')}}" >
-            <i class="fas fa-cubes"></i>
-            <span>Sản phẩm</span>
+          <i class="fas fa-cubes"></i>
+          <span>Sản phẩm</span>
         </a>
 
     </li>
@@ -66,10 +66,19 @@
     {{-- Brands --}}
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('brand.index')}}" >
-            <i class="fas fa-table"></i>
-            <span>Thương hiệu</span>
+          <i class="fas fa-table"></i>
+          <span>Thương hiệu</span>
         </a>
     </li>
+
+    {{-- Shipping --}}
+    {{-- <li class="nav-item">
+        <a class="nav-link collapsed" href="{{route('shipping.index')}}">
+          <i class="fas fa-truck"></i>
+          <span>Vận chuyển</span>
+        </a>
+
+    </li> --}}
 
     <!--Orders -->
     <li class="nav-item">
@@ -79,6 +88,12 @@
         </a>
     </li>
 
+    <!-- Reviews -->
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{route('review.index')}}">
+            <i class="fas fa-comments"></i>
+            <span>Đánh giá</span></a>
+    </li> --}}
 
 
     <!-- Divider -->
@@ -86,28 +101,28 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Posts
+      Posts
     </div>
 
     <!-- Posts -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('post.index')}}" >
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Bài viết</span>
-        </a>
+      <a class="nav-link collapsed" href="{{route('post.index')}}" >
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Bài viết</span>
+      </a>
 
     </li>
 
-    <!-- Category -->
-    <li class="nav-item">
+     <!-- Category -->
+     <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('post-category.index')}}" >
-            <i class="fas fa-sitemap fa-folder"></i>
-            <span>Loại bài viết</span>
+          <i class="fas fa-sitemap fa-folder"></i>
+          <span>Loại bài viết</span>
         </a>
 
-    </li>
+      </li>
 
-    <!-- Tags -->
+      <!-- Tags -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('post-tag.index')}}" >
             <i class="fas fa-tags fa-folder"></i>
@@ -116,34 +131,34 @@
 
     </li>
 
-    <!-- Comments -->
-    <li class="nav-item">
+      <!-- Comments -->
+      <li class="nav-item">
         <a class="nav-link" href="{{route('comment.index')}}">
             <i class="fas fa-comments fa-chart-area"></i>
             <span>Bình luận</span>
         </a>
-    </li>
+      </li>
 
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
-    <!-- Heading -->
+     <!-- Heading -->
     <div class="sidebar-heading">
         General Settings
     </div>
     <li class="nav-item">
-        <a class="nav-link" href="{{route('coupon.index')}}">
-            <i class="fas fa-table"></i>
-            <span>Khuyến Mãi</span></a>
+      <a class="nav-link" href="{{route('coupon.index')}}">
+          <i class="fas fa-table"></i>
+          <span>Khuyến Mãi</span></a>
     </li>
-    <!-- Users -->
-    <li class="nav-item">
+     <!-- Users -->
+     <li class="nav-item">
         <a class="nav-link" href="{{route('users.index')}}">
             <i class="fas fa-users"></i>
             <span>Tài khoản</span></a>
     </li>
-    <!-- General settings -->
-    <li class="nav-item">
+     <!-- General settings -->
+     <li class="nav-item">
         <a class="nav-link" href="{{route('settings')}}">
             <i class="fas fa-cog"></i>
             <span>Cài đặt</span></a>
@@ -151,7 +166,7 @@
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 
 </ul>
